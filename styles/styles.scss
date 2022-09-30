@@ -559,7 +559,7 @@ body::-webkit-scrollbar {
             .projects {
                 .allProjects {
                     grid-template-columns: repeat(1, 1fr);
-                    padding: 1rem;
+                    padding: 1rem !important;
                     gap: 6rem;
 
 
