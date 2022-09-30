@@ -1,0 +1,30 @@
+[
+    {
+        "id":1,
+        "image":"../assets/projectImg/animeCard.png",
+        "nameProject": "Anime Cards",
+        "githubLink": "https://github.com/Alucard2169/Anime_cards.git",
+        "live":"https://breakable-gabardine-ant.cyclic.app/"
+    },
+    {
+        "id":2,
+        "image":"../assets/projectImg/library.bmp",
+        "nameProject": "Library",
+        "githubLink": "https://github.com/Alucard2169/library.git",
+        "live":"https://alucard2169.github.io/library/"
+    },
+    {
+        "id":3,
+        "image":"../assets/projectImg/IdeasWeb.jpg",
+        "nameProject": "Ideas Web",
+        "githubLink": "https://github.com/Alucard2169/Ideas-web.git",
+        "live":"https://defiant-waistcoat-moth.cyclic.app/"
+    },
+    {
+        "id":4,
+        "image":"../assets/projectImg/grip.jpg",
+        "nameProject": "Basic Banking System",
+        "githubLink": "https://github.com/Alucard2169/GRIP_task1_Banking_system.git",
+        "live":"https://vast-gold-meerkat-suit.cyclic.app/"
+    }
+]
