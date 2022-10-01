@@ -770,6 +770,7 @@ body::-webkit-scrollbar {
   body .container {
     max-width: 100%;
     overflow-x: hidden !important;
+    position: relative;
   }
   body .container .homepage {
     width: 100%;
