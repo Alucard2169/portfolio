@@ -770,6 +770,10 @@ body::-webkit-scrollbar {
 }
 
 @media only screen and (max-width: 500px) {
+  body,
+  html {
+    overflow-x: hidden;
+  }
   body .container .homepage nav .itemList {
     margin: auto;
   }
