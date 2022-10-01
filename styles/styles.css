@@ -768,14 +768,12 @@ body::-webkit-scrollbar {
 
 @media only screen and (max-width: 500px) {
   body {
-    border: 1px white solid;
     width: 100vw;
   }
   body .container {
     max-width: 100vw;
     overflow: hidden !important;
     position: relative;
-    border: 1px white solid;
   }
   body .container .homepage {
     width: 100%;
