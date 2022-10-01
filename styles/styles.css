@@ -18,7 +18,7 @@ html {
   overflow-x: hidden;
   -ms-overflow-style: none;
   scrollbar-width: none;
-  background-color: #F12A7D;
+  background-color: #2E3047;
 }
 
 body::-webkit-scrollbar {
@@ -78,10 +78,6 @@ body::-webkit-scrollbar {
           transition-timing-function: ease-in-out;
 }
 
-.container .homepage nav .itemList .item a:hover {
-  color: #335A9B;
-}
-
 .container .homepage nav .itemList .item::after {
   content: '';
   position: absolute;
@@ -89,7 +85,7 @@ body::-webkit-scrollbar {
   height: 110%;
   top: -2px;
   left: 0;
-  background-color: #335A9B;
+  background-color: white;
   z-index: 100;
   -webkit-transform: scaleX(0);
           transform: scaleX(0);
@@ -102,7 +98,7 @@ body::-webkit-scrollbar {
 }
 
 .container .homepage nav .itemList .item:hover a {
-  color: #F12A7D;
+  color: #3BBA9C;
 }
 
 .container .homepage nav .itemList .item:hover::after {
@@ -132,7 +128,7 @@ body::-webkit-scrollbar {
 }
 
 .container .homepage .bio h1 {
-  color: #335A9B;
+  color: white;
   font-size: 3.5rem;
   -webkit-animation-duration: 1s;
           animation-duration: 1s;
@@ -140,7 +136,7 @@ body::-webkit-scrollbar {
 
 .container .homepage .bio h1 .name {
   font-size: 4.5rem;
-  color: white;
+  color: #3BBA9C;
 }
 
 .container .homepage .bio .otherName {
@@ -151,14 +147,14 @@ body::-webkit-scrollbar {
 
 .container .homepage .bio .otherName span {
   font-size: 2rem;
-  color: #335A9B;
+  color: #3BBA9C;
 }
 
 .container .homepage .bio .work {
   margin-top: 2rem;
-  background-color: #335A9B;
+  background-color: white;
   padding: .5rem;
-  color: white;
+  color: #2E3047;
   font-size: 1.5rem;
   -webkit-animation-delay: 300ms;
           animation-delay: 300ms;
@@ -218,7 +214,7 @@ body::-webkit-scrollbar {
   left: -5px;
   width: 60%;
   height: 100%;
-  background-color: #335A9B;
+  background-color: #3BBA9C;
   -webkit-transition: 300ms ease-in;
   transition: 300ms ease-in;
   -webkit-transform: scaleX(1);
@@ -262,7 +258,7 @@ body::-webkit-scrollbar {
 }
 
 .container .about .aboutCont .aboutHead:hover {
-  color: #335A9B;
+  color: #3BBA9C;
 }
 
 .container .about .aboutCont .aboutPara {
@@ -276,18 +272,18 @@ body::-webkit-scrollbar {
 .container .about .aboutCont .aboutPara span {
   background-color: white;
   padding: .5rem;
-  color: #335A9B;
+  color: #2E3047;
   font-weight: 900;
 }
 
 .container .about .aboutCont .aboutPara::-moz-selection {
-  background-color: #335A9B;
-  color: #F12A7D;
+  background-color: #3BBA9C;
+  color: #707793;
 }
 
 .container .about .aboutCont .aboutPara::selection {
-  background-color: #335A9B;
-  color: #F12A7D;
+  background-color: #3BBA9C;
+  color: #707793;
 }
 
 .container .about .skillCont {
@@ -325,7 +321,7 @@ body::-webkit-scrollbar {
   left: -5px;
   width: 60%;
   height: 100%;
-  background-color: #335A9B;
+  background-color: #3BBA9C;
   -webkit-transition: 300ms ease-in;
   transition: 300ms ease-in;
   -webkit-transform: scaleX(1);
@@ -369,7 +365,7 @@ body::-webkit-scrollbar {
 }
 
 .container .about .skillCont .skillHead:hover {
-  color: #335A9B;
+  color: #3BBA9C;
 }
 
 .container .about .skillCont .skills {
@@ -463,8 +459,8 @@ body::-webkit-scrollbar {
 }
 
 .container .about .skillCont .skills .skill span {
-  color: white;
-  background-color: #335A9B;
+  color: #2E3047;
+  background-color: #3BBA9C;
   padding: .2rem;
   -webkit-transition: 200ms ease-in-out;
   transition: 200ms ease-in-out;
@@ -472,7 +468,7 @@ body::-webkit-scrollbar {
 
 .container .about .skillCont .skills .skill span:hover {
   background-color: white;
-  color: #335A9B;
+  color: #2E3047;
 }
 
 .container .projects {
@@ -512,7 +508,7 @@ body::-webkit-scrollbar {
   left: -5px;
   width: 60%;
   height: 100%;
-  background-color: #335A9B;
+  background-color: #3BBA9C;
   -webkit-transition: 300ms ease-in;
   transition: 300ms ease-in;
   -webkit-transform: scaleX(1);
@@ -556,7 +552,7 @@ body::-webkit-scrollbar {
 }
 
 .container .projects .projectHead:hover {
-  color: #335A9B;
+  color: #3BBA9C;
 }
 
 .container .projects .allProjects {
@@ -579,7 +575,7 @@ body::-webkit-scrollbar {
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
-  color: #335A9B;
+  color: #3BBA9C;
 }
 
 .container .projects .allProjects .project .imageContainer {
@@ -629,8 +625,8 @@ body::-webkit-scrollbar {
 
 .container .projects .allProjects .project .links .repo,
 .container .projects .allProjects .project .links .live {
-  background-color: #335A9B;
-  color: #F12A7D;
+  background-color: #3BBA9C;
+  color: white;
   font-size: 1.5rem;
   border-radius: 100px;
   padding: .5rem;
@@ -641,7 +637,7 @@ body::-webkit-scrollbar {
 
 .container .projects .allProjects .project .links .repo:hover,
 .container .projects .allProjects .project .links .live:hover {
-  color: #335A9B;
+  color: #3BBA9C;
   background-color: white;
 }
 
@@ -652,17 +648,33 @@ body::-webkit-scrollbar {
 .container .contact {
   margin-top: auto;
   height: 10rem;
-  background-color: #335A9B;
+  background-color: #707793;
   padding: 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 1rem;
 }
 
 .container .contact .contHead {
   font-size: 2rem;
-  color: #F12A7D;
-  background-color: white;
+  color: #3BBA9C;
+  background-color: #2E3047;
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
+  text-align: center;
+  padding: .5rem;
 }
 
 .container .contact .contactlinks {
@@ -690,6 +702,9 @@ body::-webkit-scrollbar {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .container .contact .contactlinks .email .emailText {
@@ -699,7 +714,7 @@ body::-webkit-scrollbar {
 
 .container .contact .contactlinks .email .emailText span {
   font-size: 1.3rem;
-  color: #F12A7D;
+  color: #2E3047;
 }
 
 .container .contact .contactlinks .mediaLinks {
