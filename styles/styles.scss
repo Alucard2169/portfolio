@@ -543,6 +543,7 @@ body::-webkit-scrollbar {
         .container {
             max-width: 100%;
             overflow-x: hidden !important;
+            position: relative;
 
             .homepage {
                 width: 100%;
