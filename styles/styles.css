@@ -380,6 +380,7 @@ body::-webkit-scrollbar {
 }
 
 .container .about .skillCont .skills .skill {
+  background-color: #3BBA9C;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -390,6 +391,7 @@ body::-webkit-scrollbar {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  padding: .1rem 0 0;
   gap: 1rem;
 }
 
@@ -460,15 +462,17 @@ body::-webkit-scrollbar {
 
 .container .about .skillCont .skills .skill span {
   color: #2E3047;
-  background-color: #3BBA9C;
+  width: 100%;
+  text-align: center;
+  background-color: white;
   padding: .2rem;
   -webkit-transition: 200ms ease-in-out;
   transition: 200ms ease-in-out;
 }
 
 .container .about .skillCont .skills .skill span:hover {
-  background-color: white;
-  color: #2E3047;
+  background-color: #3BBA9C;
+  color: white;
 }
 
 .container .projects {
@@ -653,6 +657,7 @@ body::-webkit-scrollbar {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  max-width: 100vw;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -678,7 +683,7 @@ body::-webkit-scrollbar {
 }
 
 .container .contact .contactlinks {
-  width: 90%;
+  max-width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -686,22 +691,22 @@ body::-webkit-scrollbar {
       -ms-flex-align: center;
           align-items: center;
   gap: 2rem;
-  margin: .5rem auto 0;
+  margin: auto;
 }
 
 .container .contact .contactlinks .email,
 .container .contact .contactlinks .mediaLinks {
   width: 50%;
   height: 4rem;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .container .contact .contactlinks .email {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -714,6 +719,9 @@ body::-webkit-scrollbar {
 
 .container .contact .contactlinks .email .emailText span {
   font-size: 1.3rem;
+}
+
+.container .contact .contactlinks .email .emailText span a {
   color: #2E3047;
 }
 
@@ -762,14 +770,21 @@ body::-webkit-scrollbar {
 }
 
 @media only screen and (max-width: 500px) {
+  body .container .homepage nav .itemList {
+    margin: auto;
+  }
   body .container .homepage .bio h1 {
     font-size: 2rem;
   }
   body .container .homepage .bio h1 .name {
     font-size: 3rem;
   }
+  body .container .about {
+    max-width: 100vw;
+  }
   body .container .about .aboutCont .aboutPara {
-    padding: 1rem;
+    max-width: 100%;
+    padding: 1rem .5rem;
     font-size: 1.2rem;
     line-height: 2.2rem;
   }
@@ -777,15 +792,21 @@ body::-webkit-scrollbar {
     margin-top: 1rem;
     display: -ms-grid;
     display: grid;
-    -ms-grid-columns: (1fr)[3];
-        grid-template-columns: repeat(3, 1fr);
+    -ms-grid-columns: (1fr)[3] !important;
+        grid-template-columns: repeat(3, 1fr) !important;
   }
   body .container .about .skillCont .skills .skill img {
-    width: 1.8rem;
-    height: 1.8rem;
+    width: 2.5rem;
+    height: 2.5rem;
   }
   body .container .about .skillCont .skills .skill span {
     font-size: .8rem;
+  }
+  body .container .projects {
+    max-width: 100vw;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
   body .container .projects .allProjects {
     -ms-grid-columns: (1fr)[1];
@@ -799,7 +820,7 @@ body::-webkit-scrollbar {
   }
   body .container .projects .allProjects .project .imageContainer {
     width: 21rem;
-    height: 15rem;
+    height: 13rem;
   }
   body .container .projects .allProjects .project .imageContainer .image {
     width: 21rem;
@@ -822,7 +843,11 @@ body::-webkit-scrollbar {
     margin-top: 2rem;
   }
   body .container .contact {
-    height: 18rem;
+    height: 13rem;
+    padding: 0 !important;
+  }
+  body .container .contact .contHead {
+    margin-top: 2rem;
   }
   body .container .contact .contactlinks {
     display: -webkit-box;
@@ -832,7 +857,13 @@ body::-webkit-scrollbar {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    width: 100%;
+    max-width: 100vw;
+    height: 100%;
+    gap: 1rem;
+  }
+  body .container .contact .contactlinks .email,
+  body .container .contact .contactlinks .mediaLink {
+    height: 1rem;
   }
   body .container .contact .contactlinks .email {
     text-align: left;
@@ -843,6 +874,11 @@ body::-webkit-scrollbar {
   }
   body .container .contact .contactlinks .mediaLinks {
     width: 100%;
+    gap: 2rem;
+  }
+  body .container .contact .contactlinks .mediaLinks a img {
+    max-width: 1.2rem;
+    max-height: 1.2rem;
   }
 }
 
