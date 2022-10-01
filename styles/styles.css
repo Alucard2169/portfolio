@@ -771,6 +771,12 @@ body::-webkit-scrollbar {
   html {
     overflow-x: hidden;
   }
+  body .container {
+    min-width: 100vw;
+  }
+  body .container .homepage {
+    width: 100%;
+  }
   body .container .homepage nav .itemList {
     margin: auto;
   }
