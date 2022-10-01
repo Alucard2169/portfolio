@@ -18,7 +18,7 @@ html {
     overflow-x: hidden;
     -ms-overflow-style: none;
     scrollbar-width: none;
-    background-color: #F12A7D;
+    background-color: #2E3047;
 }
 
 body::-webkit-scrollbar {
@@ -35,7 +35,7 @@ body::-webkit-scrollbar {
         left: -5px;
         width: 60%;
         height: 100%;
-        background-color: #335A9B;
+        background-color: #3BBA9C;
         transition: 300ms ease-in;
         transform: scaleX(1);
         transform-origin: right;
@@ -69,7 +69,7 @@ body::-webkit-scrollbar {
     }
 
     &:hover {
-        color: #335A9B;
+        color: #3BBA9C;
 
     }
 }
@@ -114,9 +114,6 @@ body::-webkit-scrollbar {
                         transition-delay: 250ms;
                         transition-timing-function: ease-in-out;
 
-                        &:hover {
-                            color: #335A9B;
-                        }
                     }
 
                     &::after {
@@ -126,7 +123,7 @@ body::-webkit-scrollbar {
                         height: 110%;
                         top: -2px;
                         left: 0;
-                        background-color: #335A9B;
+                        background-color: white;
                         z-index: 100;
                         transform: scaleX(0);
                         transform-origin: left;
@@ -134,7 +131,7 @@ body::-webkit-scrollbar {
                     }
 
                     &:hover a {
-                        color: #F12A7D;
+                        color: #3BBA9C;
                     }
 
                     &:hover::after {
@@ -155,13 +152,13 @@ body::-webkit-scrollbar {
             text-align: center;
 
             h1 {
-                color: #335A9B;
+                color: white;
                 font-size: 3.5rem;
                 animation-duration: 1s;
 
                 .name {
                     font-size: 4.5rem;
-                    color: white;
+                    color: #3BBA9C;
                 }
             }
 
@@ -172,15 +169,15 @@ body::-webkit-scrollbar {
 
                 span {
                     font-size: 2rem;
-                    color: #335A9B;
+                    color: #3BBA9C;
                 }
             }
 
             .work {
                 margin-top: 2rem;
-                background-color: #335A9B;
+                background-color: white;
                 padding: .5rem;
-                color: white;
+                color: #2E3047;
                 font-size: 1.5rem;
                 animation-delay: 300ms;
                 animation-duration: 1.5s;
@@ -226,13 +223,13 @@ body::-webkit-scrollbar {
                 span {
                     background-color: white;
                     padding: .5rem;
-                    color: #335A9B;
+                    color: #2E3047;
                     font-weight: 900;
                 }
 
                 &::selection {
-                    background-color: #335A9B;
-                    color: #F12A7D;
+                    background-color: #3BBA9C;
+                    color: #707793;
                 }
             }
         }
@@ -321,14 +318,14 @@ body::-webkit-scrollbar {
 
 
                     span {
-                        color: white;
-                        background-color: #335A9B;
+                        color: #2E3047;
+                        background-color: #3BBA9C;
                         padding: .2rem;
                         transition: 200ms ease-in-out;
 
                         &:hover {
                             background-color: white;
-                            color: #335A9B;
+                            color: #2E3047;
                         }
                     }
                 }
@@ -370,7 +367,7 @@ body::-webkit-scrollbar {
                     font-size: 2.5rem;
                     margin-bottom: .5rem;
                     width: fit-content;
-                    color: #335A9B;
+                    color: #3BBA9C;
                 }
 
                 .imageContainer {
@@ -412,8 +409,8 @@ body::-webkit-scrollbar {
 
                     .repo,
                     .live {
-                        background-color: #335A9B;
-                        color: #F12A7D;
+                        background-color: #3BBA9C;
+                        color: white;
                         font-size: 1.5rem;
                         border-radius: 100px;
                         padding: .5rem;
@@ -421,7 +418,7 @@ body::-webkit-scrollbar {
                         transition: 200ms ease-in-out;
 
                         &:hover {
-                            color: #335A9B;
+                            color: #3BBA9C;
                             background-color: white;
                         }
                     }
@@ -439,15 +436,21 @@ body::-webkit-scrollbar {
     .contact {
         margin-top: auto;
         height: 10rem;
-        background-color: #335A9B;
+        background-color: #707793;
         padding: 1rem;
-
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 1rem;
 
         .contHead {
             font-size: 2rem;
-            color: #F12A7D;
-            background-color: white;
+            color: #3BBA9C;
+            background-color: #2E3047;
             width: fit-content;
+            text-align: center;
+            padding: .5rem;
         }
 
         .contactlinks {
@@ -466,6 +469,7 @@ body::-webkit-scrollbar {
             .email {
                 display: flex;
                 align-items: center;
+                justify-content: center;
 
                 .emailText {
                     font-size: 1.2rem;
@@ -473,7 +477,7 @@ body::-webkit-scrollbar {
 
                     span {
                         font-size: 1.3rem;
-                        color: #F12A7D;
+                        color: #2E3047;
 
                     }
                 }
