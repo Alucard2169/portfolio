@@ -1,0 +1,87 @@
+[
+    [
+        {
+            "id":1,
+            "companyName": "The Sparks Foundation",
+            "link":"https://www.thesparksfoundationsingapore.org/",
+            "time": "September 2022 - October 2022",
+            "about" : "During my internship period in The Sparks Foundation, I communicated a lot with my fellow interns and worked with them. During my Internship I build a MERN application. A basic banking system, It represents a simple bank application, where the user can view their bank details and transfer money to others. I learned new techniques while building the project and learned new ways to solve errors."
+        },
+        {
+            "id":2,
+            "companyName": "Maruti Suzuki India Ltd",
+            "link":"https://www.marutisuzuki.com/",
+            "time": "August 2022 - September 2022",
+            "about" : "During my internship period in Maruti Suzuki, I learned to work with a team of developers and to communicate with other team members. I worked on both the front-end and back-end of a data handling application. The application handles the data sent by venders and store that data into company's database for further analysis. I worked  on the front-end to make it look pleasant and easy to use. I worked on the backend to make the data handling more smooth, so that future operations that are to be performed on the data can be performed smoothly and easily."
+        }
+        
+    ],
+    [
+        {
+        "id":1,
+        "image":"../assets/projectImg/animeCard.png",
+        "nameProject": "Anime Cards",
+        "githubLink": "https://github.com/Alucard2169/Anime_cards.git",
+        "live":"https://breakable-gabardine-ant.cyclic.app/",
+        "about":"Anime Card is a web application that fetches data from Jikan API and displays it on the frontend. I used nodeJS and expressJS as proxy server with ReactJS as Frontend. The application is deployed on Cyclic.",
+        "technologies":["ReactJS","NodeJS","ExpressJS","FramerMotion"]
+    },
+    {
+        "id":2,
+        "image":"../assets/projectImg/library.bmp",
+        "nameProject": "Library",
+        "githubLink": "https://github.com/Alucard2169/library.git",
+        "live":"https://alucard2169.github.io/library/",
+        "about":"Library is a simple library application.Library works on object oriented paradigm. It stores user's books into the local storage of the browser so when the user opens up the application again user can see all their books that they have added in the past. It provides two themes for user's convenance dark/light.",
+        "technologies":["HTML","CSS","SCSS","Javascript","LocalStorage"]
+    },
+    {
+        "id":3,
+        "image":"../assets/projectImg/IdeasWeb.jpg",
+        "nameProject": "Ideas Web",
+        "githubLink": "https://github.com/Alucard2169/Ideas-web.git",
+        "live":"https://defiant-waistcoat-moth.cyclic.app/",
+        "about":"Ideas Web is a full stack application, built with nodeJS,ExpressJS and MongoDB. Using this application, anyone on internet access to the application can add their ideas using the frontend interface the application provides, and other users can view the ideas on the home screen.",
+        "technologies":["HTML","CSS","Javascript","EJS","NodeJS","ExpressJS","MongoDB"]
+    }
+    ],
+
+   [
+     {
+        "id":1,
+        "image":"../assets/projectImg/animeCard.png",
+        "nameProject": "Anime Cards",
+        "githubLink": "https://github.com/Alucard2169/Anime_cards.git",
+        "live":"https://breakable-gabardine-ant.cyclic.app/",
+        "about":"Anime Card is a web application that fetches data from Jikan API and displays it on the frontend. I used nodeJS and expressJS as proxy server with ReactJS as Frontend. The application is deployed on Cyclic.",
+        "technologies":["ReactJS","NodeJS","ExpressJS","FramerMotion"]
+    },
+    {
+        "id":2,
+        "image":"../assets/projectImg/library.bmp",
+        "nameProject": "Library",
+        "githubLink": "https://github.com/Alucard2169/library.git",
+        "live":"https://alucard2169.github.io/library/",
+        "about":"Library is a simple library application.Library works on object oriented paradigm. It stores user's books into the local storage of the browser so when the user opens up the application again user can see all their books that they have added in the past. It provides two themes for user's convenance dark/light.",
+        "technologies":["HTML","CSS","SCSS","Javascript","LocalStorage"]
+    },
+    {
+        "id":3,
+        "image":"../assets/projectImg/IdeasWeb.jpg",
+        "nameProject": "Ideas Web",
+        "githubLink": "https://github.com/Alucard2169/Ideas-web.git",
+        "live":"https://defiant-waistcoat-moth.cyclic.app/",
+        "about":"Ideas Web is a full stack application, built with nodeJS,ExpressJS and MongoDB. Using this application, anyone on internet access to the application can add their ideas using the frontend interface the application provides, and other users can view the ideas on the home screen.",
+        "technologies":["HTML","CSS","Javascript","EJS","NodeJS","ExpressJS","MongoDB"]
+    },
+    {
+        "id":4,
+        "image":"../assets/projectImg/grip.jpg",
+        "nameProject": "Basic Banking System",
+        "githubLink": "https://github.com/Alucard2169/GRIP_task1_Banking_system.git",
+        "live":"https://vast-gold-meerkat-suit.cyclic.app/",
+        "about":"Basic Banking System, is a application i built for my internship with The Sparks Foundation.This application is built completely on MERN stack, it represents a simple bank application, where users can see their bank details and transfer money to other users. The application is deployed on Cyclic.",
+        "technologies":["ReactJS","NodeJS","ExpressJS","MongoDB","Framer Motion"]
+    }
+   ]
+]
