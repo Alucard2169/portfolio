@@ -19,7 +19,7 @@
     [
         {
         "id":1,
-        "image":"../assets/projectImg/animeCard.png",
+        "image":"../assets/projectImg/animeCard.jpg",
         "nameProject": "Anime Cards",
         "githubLink": "https://github.com/Alucard2169/Anime_cards.git",
         "live":"https://breakable-gabardine-ant.cyclic.app/",
@@ -49,7 +49,7 @@
    [
      {
         "id":1,
-        "image":"../assets/projectImg/animeCard.png",
+        "image":"../assets/projectImg/animeCard.jpg",
         "nameProject": "Anime Cards",
         "githubLink": "https://github.com/Alucard2169/Anime_cards.git",
         "live":"https://breakable-gabardine-ant.cyclic.app/",
