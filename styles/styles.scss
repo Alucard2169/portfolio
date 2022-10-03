@@ -167,6 +167,10 @@ body {
                     font-size: 1.43rem;
                     line-height: 30px;
                 }
+
+                .flower {
+                    display: none;
+                }
             }
 
             .divider {
@@ -470,6 +474,11 @@ body {
 
                     .aboutPara {
                         font-size: 1.8rem;
+                    }
+
+                    .flower {
+                        display: block;
+                        margin: auto;
                     }
 
                 }
