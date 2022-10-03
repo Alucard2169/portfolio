@@ -204,6 +204,10 @@ body .container .about .aboutCont .aboutPara {
   line-height: 30px;
 }
 
+body .container .about .aboutCont .flower {
+  display: none;
+}
+
 body .container .about .divider {
   display: none;
 }
@@ -539,6 +543,10 @@ body .container .contact .media a img {
   }
   body .container .about .aboutCont .aboutPara {
     font-size: 1.8rem;
+  }
+  body .container .about .aboutCont .flower {
+    display: block;
+    margin: auto;
   }
   body .container .about .divider {
     display: block;
