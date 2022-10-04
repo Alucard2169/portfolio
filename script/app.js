@@ -3,8 +3,8 @@ const projectSection = document.getElementById('project');
 const allProjectButton = document.getElementById('moreProjects')
 const openMenuBtn = document.getElementById('openMenu');
 const closeMenuBtn = document.getElementById('closeMenu');
-const mobileMenu = document.getElementById('mobileMenu')
-const mobileMenuItems = document.querySelectorAll('#items')
+const mobileMenu = document.getElementById('mobileMenu');
+const mobileMenuItems = document.querySelectorAll('#items');
 
 openMenuBtn.addEventListener('click', () => {
     mobileMenu.style.display = 'block'
@@ -183,6 +183,7 @@ allProjectButton.addEventListener('click', () => {
     projectSection.innerHTML = ''
     preview = false;
     getProjects(preview)
+    allProjectButton.style.display = 'none'
 })
 
 
