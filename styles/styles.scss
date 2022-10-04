@@ -331,10 +331,13 @@ body {
                             padding: .5rem;
                             border-radius: 10px;
                             transition: all 300ms ease-in-out;
+                            background-color: white;
+
+                            color: #0D0D0D;
 
                             &:hover {
-                                color: #0D0D0D;
-                                background-color: white;
+                                color: white;
+                                background-color: #0D0D0D;
                             }
                         }
                     }
@@ -528,7 +531,7 @@ body {
 
                         .imageContainer {
                             max-width: 30rem;
-                            height: 100%;
+                            height: 15rem;
                         }
 
                         .info {
@@ -546,6 +549,9 @@ body {
                         }
 
                         .lower {
+                            width: 100%;
+                            padding-right: 1rem;
+
                             .techHead {
                                 font-size: 1.2rem;
                             }
@@ -553,6 +559,7 @@ body {
                             .projectLinks {
                                 margin-top: 1rem;
                                 padding: .5rem;
+
                             }
                         }
                     }
