@@ -549,8 +549,12 @@ body {
                         }
 
                         .lower {
+                            display: flex;
+                            flex-direction: column;
+                            justify-content: space-between;
                             width: 100%;
-                            padding-right: 1rem;
+                            padding: 1rem;
+                            gap: 1rem;
 
                             .techHead {
                                 font-size: 1.2rem;
