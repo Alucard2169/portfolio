@@ -504,13 +504,14 @@ body {
             .experience {
                 #experience {
                     display: flex;
+                    margin: auto;
                     gap: 4rem;
 
                     .exper {
                         width: 50%;
 
                         .Head {
-                            font-size: 1.5rem;
+                            font-size: 1.3rem;
                         }
 
                         .About {
@@ -523,11 +524,13 @@ body {
 
             .projects {
                 .allProjects {
+                    gap: 4rem;
+
                     .project {
                         display: flex;
                         height: 100%;
                         align-items: center;
-                        gap: 1rem;
+                        gap: 4rem;
 
                         .imageContainer {
                             max-width: 30rem;
