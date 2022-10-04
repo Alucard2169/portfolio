@@ -563,17 +563,21 @@ body .container .contact .media a img {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    margin: auto;
     gap: 4rem;
   }
   body .container .experience #experience .exper {
     width: 50%;
   }
   body .container .experience #experience .exper .Head {
-    font-size: 1.5rem;
+    font-size: 1.3rem;
   }
   body .container .experience #experience .exper .About {
     line-height: 2.5rem;
     font-size: 1.2rem;
+  }
+  body .container .projects .allProjects {
+    gap: 4rem;
   }
   body .container .projects .allProjects .project {
     display: -webkit-box;
@@ -583,7 +587,7 @@ body .container .contact .media a img {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    gap: 1rem;
+    gap: 4rem;
   }
   body .container .projects .allProjects .project .imageContainer {
     max-width: 30rem;
