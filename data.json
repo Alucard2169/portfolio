@@ -82,6 +82,33 @@
         "live":"https://vast-gold-meerkat-suit.cyclic.app/",
         "about":"Basic Banking System, is a application i built for my internship with The Sparks Foundation.This application is built completely on MERN stack, it represents a simple bank application, where users can see their bank details and transfer money to other users. The application is deployed on Cyclic.",
         "technologies":["ReactJS","NodeJS","ExpressJS","MongoDB","Framer Motion"]
+    },
+    {
+        "id":5,
+        "image":"../assets/projectImg/loopstudio.jpg",
+        "nameProject":"Loopstudios landing page",
+        "githubLink":"https://github.com/Alucard2169/loopStudio-landing-page.git",
+        "live":"https://alucard2169.github.io/loopStudio-landing-page/",
+        "about":"Loopstudio Landing Page is a front-end project that i completed, after trying a bunch of easy front-end challenges, i gave it a try as it was a Junior level challenge. I tried to make it as responsive as possible, during this challenge i struggled a lot with browser accessibility, but after doing some brief research on accessibility i managed to solve all of my issues. This project pushed me to learn more about browser accessibility.",
+        "technologies":["HTML","SASS","JS"]
+    },
+    {
+        "id":6,
+        "image":"../assets/projectImg/todo.jpg",
+        "nameProject":"To-do List",
+        "githubLink":"https://github.com/Alucard2169/JS-TO-DO-list.git",
+        "live":"https://alucard2169.github.io/JS-TO-DO-list/",
+        "about":"JS-TO-Do List is a front-end mentor challenge that i completed using Object Oriented Paradigm in Javascript.This application let's the user to store their list of tasks virtually in the localstorage of browser. Using this application, the user can view, add and delete their tasks. It provides 2 themes for user convenance.",
+        "technologies":["HTML","CSS","SASS","Javascript","LocalStorage"]
+    },
+    {
+        "id":7,
+        "image":"../assets/projectImg/rockpaper.jpg",
+        "nameProject":"Rock-Paper-Scissor",
+        "githubLink":"https://github.com/Alucard2169/Rock-paper-scissor-game.git",
+        "live":"https://alucard2169.github.io/Rock-paper-scissor-game/",
+        "about":"Rock-paper-scissor is a basic game made with JS, it uses functional programing, using this application the user can play rock-paper-scissor game with their device computer/mobile. This application is responsive for both mobile and desktop.",
+        "technologies":["HTML","CSS","Javascript"]
     }
    ]
 ]
