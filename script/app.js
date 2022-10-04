@@ -104,6 +104,9 @@ const addProject = (id,image,nameProject,githubLink,live,about,technologies) => 
     pgithubLink.href = githubLink;
     liveLink.href = live;
 
+    pgithubLink.setAttribute('target',"_blank")
+    liveLink.setAttribute('target',"_blank")
+
     pgithubLink.textContent = 'Repository'
     liveLink.textContent = 'Live'
 
@@ -181,3 +184,7 @@ allProjectButton.addEventListener('click', () => {
     preview = false;
     getProjects(preview)
 })
+
+
+
+
