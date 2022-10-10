@@ -17,6 +17,16 @@ html {
   height: 100%;
 }
 
+.cursor {
+  position: absolute;
+  -webkit-box-shadow: 0px 1px 2px 0px rgba(0, 255, 255, 0.7), 1px 2px 4px 0px rgba(0, 255, 255, 0.7), 2px 4px 8px 0px rgba(0, 255, 255, 0.7), 2px 4px 16px 0px rgba(0, 255, 255, 0.7);
+          box-shadow: 0px 1px 2px 0px rgba(0, 255, 255, 0.7), 1px 2px 4px 0px rgba(0, 255, 255, 0.7), 2px 4px 8px 0px rgba(0, 255, 255, 0.7), 2px 4px 16px 0px rgba(0, 255, 255, 0.7);
+  height: 6px;
+  width: 6px;
+  border-radius: 100px;
+  z-index: 2000;
+}
+
 .mobileMenu {
   display: none;
   position: absolute;
@@ -374,12 +384,13 @@ body .container .projects .allProjects .project .techUsed {
   -ms-grid-columns: (1fr)[3];
       grid-template-columns: repeat(3, 1fr);
   gap: 1rem;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: start;
 }
 
 body .container .projects .allProjects .project .techUsed .tech {
-  text-align: center;
-  padding: .5rem;
-  border: 1px white solid;
+  width: 100%;
   border-radius: 100px;
 }
 
@@ -587,7 +598,7 @@ body .container .contact .media a img {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    gap: 2rem;
+    gap: 1rem;
   }
   body .container .projects .allProjects .project .imageContainer {
     max-width: 30rem;
