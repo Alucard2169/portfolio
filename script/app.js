@@ -113,7 +113,7 @@ const addProject = (id,image,nameProject,githubLink,live,about,technologies) => 
     technologies.forEach((tech) => {
         const projectTech = document.createElement('span');
         projectTech.classList.add('tech');
-        projectTech.textContent = tech;
+        projectTech.textContent = `<${tech}/>`;
         projectTechCont.appendChild(projectTech)
     })
 
@@ -189,3 +189,12 @@ allProjectButton.addEventListener('click', () => {
 
 
 
+// cursor
+const cursorRounded = document.getElementById("rounded");
+const moveCursor = (e) => {
+    const mouseY = e.pageY;
+    const mouseX = e.pageX;
+    cursorRounded.style.transform = `translate3d(${mouseX - 7}px,${mouseY -12}px,0)`;
+}
+
+window.addEventListener('mousemove',moveCursor)
