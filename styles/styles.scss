@@ -313,9 +313,13 @@ body {
                     }
 
 
+                    .techHead {
+                        text-underline-offset: 5px;
+                        text-decoration: underline;
+                    }
 
                     .techUsed {
-                        margin-top: .5rem;
+                        margin-top: 1rem;
                         width: 100%;
                         display: grid;
                         grid-template-columns: repeat(3, 1fr);
@@ -324,7 +328,6 @@ body {
 
                         .tech {
                             width: 100%;
-
                             border-radius: 100px;
                         }
                     }
