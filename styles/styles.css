@@ -376,8 +376,13 @@ body .container .projects .allProjects .project .aboutProject {
   margin-bottom: 1rem;
 }
 
+body .container .projects .allProjects .project .techHead {
+  text-underline-offset: 5px;
+  text-decoration: underline;
+}
+
 body .container .projects .allProjects .project .techUsed {
-  margin-top: .5rem;
+  margin-top: 1rem;
   width: 100%;
   display: -ms-grid;
   display: grid;
