@@ -358,7 +358,7 @@ body .container .projects .allProjects .project {
 
 body .container .projects .allProjects .project .imageContainer {
   width: 100%;
-  height: 11rem;
+  min-height: 11rem;
   overflow: hidden;
 }
 
@@ -626,7 +626,6 @@ body .container .contact .media a img {
   body .container .projects .allProjects .project .imageContainer {
     min-width: 25rem;
     height: 15rem;
-    overflow: visible;
   }
   body .container .projects .allProjects .project .imageContainer .projectImage {
     min-height: 15rem;
