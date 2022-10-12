@@ -36,6 +36,7 @@ const addExperience = (id,head,link,time,para) => {
     const experLink = document.createElement('a');
     const experTime = document.createElement('span');
     const experPara = document.createElement('p');
+    const linkIcon = document.createElement('img');
 
     experColumn.setAttribute('id',id)
     experLink.textContent = head;
@@ -43,10 +44,14 @@ const addExperience = (id,head,link,time,para) => {
     experLink.setAttribute('target', '_blank');
     experTime.textContent = time;
     experPara.textContent = para;
-    experLinkIcon.classList.add('fa-solid','fa-arrow-up-right-from-square','link')
+    linkIcon.classList.add('link');
+    linkIcon.src = './assets/icons/link_icon.svg';
+
+    experHead.appendChild(linkIcon)
+
 
     experColumn.classList.add('exper');
-    experHead.classList.add('Head')
+    experHead.classList.add('Head');
     experTime.classList.add('Time');
     experPara.classList.add('About');
 
