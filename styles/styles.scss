@@ -296,7 +296,7 @@ body {
 
                     .imageContainer {
                         width: 100%;
-                        height: 11rem;
+                        min-height: 11rem;
                         overflow: hidden;
 
                         .projectImage {
@@ -568,7 +568,7 @@ body {
                         .imageContainer {
                             min-width: 25rem;
                             height: 15rem;
-                            overflow: visible;
+
 
                             .projectImage {
                                 min-height: 15rem;
