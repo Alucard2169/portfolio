@@ -305,7 +305,11 @@ body .container .experience .exper .Head {
 }
 
 body .container .experience .exper .link {
-  margin-left: .5rem;
+  width: 1.2rem;
+  height: 1.2rem;
+  position: absolute;
+  right: -27px;
+  top: 0;
 }
 
 body .container .experience .exper .About {
@@ -598,7 +602,8 @@ body .container .contact .media a img {
     width: 50%;
   }
   body .container .experience #experience .exper .Head {
-    font-size: 1.3rem;
+    font-size: 1.5rem;
+    font-weight: 900;
   }
   body .container .experience #experience .exper .About {
     line-height: 2.5rem;
