@@ -252,7 +252,12 @@ body {
                 }
 
                 .link {
-                    margin-left: .5rem;
+                    width: 1.2rem;
+                    height: 1.2rem;
+                    position: absolute;
+                    right: -27px;
+                    top: 0;
+
                 }
 
                 .About {
@@ -537,7 +542,8 @@ body {
                         width: 50%;
 
                         .Head {
-                            font-size: 1.3rem;
+                            font-size: 1.5rem;
+                            font-weight: 900;
                         }
 
                         .About {
