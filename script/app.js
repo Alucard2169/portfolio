@@ -46,6 +46,7 @@ const addExperience = (id,head,link,time,para) => {
     experPara.textContent = para;
     linkIcon.classList.add('link');
     linkIcon.src = './assets/icons/link_icon.svg';
+    linkIcon.alt = "company website link";
 
     experHead.appendChild(linkIcon)
 
