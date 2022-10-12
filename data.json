@@ -19,7 +19,7 @@
     [
         {
         "id":1,
-        "image":"../assets/projectImg/animeCard.jpg",
+        "image":"../assets/projectImg/animeCard.webp",
         "nameProject": "Anime Cards",
         "githubLink": "https://github.com/Alucard2169/Anime_cards.git",
         "live":"https://breakable-gabardine-ant.cyclic.app/",
@@ -28,20 +28,20 @@
     },
     {
         "id":2,
-        "image":"../assets/projectImg/library.bmp",
+        "image":"../assets/projectImg/library.webp",
         "nameProject": "Library",
         "githubLink": "https://github.com/Alucard2169/library.git",
         "live":"https://alucard2169.github.io/library/",
-        "about":"Library is a simple library application.Library works on object oriented paradigm. It stores user's books into the local storage of the browser so when the user opens up the application again user can see all their books that they have added in the past. It provides two themes for user's convenance dark/light.",
+        "about":"Library is a simple library application.Library works on object oriented paradigm. It stores user's books into the local storage of the browser so when the user opens up the application again user can see all their books that they have added in the past.",
         "technologies":["HTML","CSS","SCSS","Javascript","LocalStorage"]
     },
     {
         "id":3,
-        "image":"../assets/projectImg/IdeasWeb.jpg",
+        "image":"../assets/projectImg/IdeasWeb.webp",
         "nameProject": "Ideas Web",
         "githubLink": "https://github.com/Alucard2169/Ideas-web.git",
         "live":"https://defiant-waistcoat-moth.cyclic.app/",
-        "about":"Ideas Web is a full stack application, built with nodeJS,ExpressJS and MongoDB. Using this application, anyone on internet access to the application can add their ideas using the frontend interface the application provides, and other users can view the ideas on the home screen.",
+        "about":"Idea Web i a Idea sharing application. Using this application, anyone on internet access to the application can add their ideas using the frontend interface the application provides, and other users can view the ideas on the home screen.",
         "technologies":["HTML","CSS","Javascript","EJS","NodeJS","ExpressJS","MongoDB"]
     }
     ],
@@ -49,7 +49,7 @@
    [
      {
         "id":1,
-        "image":"../assets/projectImg/animeCard.jpg",
+        "image":"../assets/projectImg/animeCard.webp",
         "nameProject": "Anime Cards",
         "githubLink": "https://github.com/Alucard2169/Anime_cards.git",
         "live":"https://breakable-gabardine-ant.cyclic.app/",
@@ -58,7 +58,7 @@
     },
     {
         "id":2,
-        "image":"../assets/projectImg/library.bmp",
+        "image":"../assets/projectImg/library.webp",
         "nameProject": "Library",
         "githubLink": "https://github.com/Alucard2169/library.git",
         "live":"https://alucard2169.github.io/library/",
@@ -67,7 +67,7 @@
     },
     {
         "id":3,
-        "image":"../assets/projectImg/IdeasWeb.jpg",
+        "image":"../assets/projectImg/IdeasWeb.webp",
         "nameProject": "Ideas Web",
         "githubLink": "https://github.com/Alucard2169/Ideas-web.git",
         "live":"https://defiant-waistcoat-moth.cyclic.app/",
@@ -76,7 +76,7 @@
     },
     {
         "id":4,
-        "image":"../assets/projectImg/grip.jpg",
+        "image":"../assets/projectImg/grip.webp",
         "nameProject": "Basic Banking System",
         "githubLink": "https://github.com/Alucard2169/GRIP_task1_Banking_system.git",
         "live":"https://vast-gold-meerkat-suit.cyclic.app/",
@@ -85,25 +85,25 @@
     },
     {
         "id":5,
-        "image":"../assets/projectImg/loopstudio.jpg",
+        "image":"../assets/projectImg/loopstudio.webp",
         "nameProject":"Loopstudios landing page",
         "githubLink":"https://github.com/Alucard2169/loopStudio-landing-page.git",
         "live":"https://alucard2169.github.io/loopStudio-landing-page/",
-        "about":"Loopstudio Landing Page is a front-end project that i completed, after trying a bunch of easy front-end challenges, i gave it a try as it was a Junior level challenge. I tried to make it as responsive as possible, during this challenge i struggled a lot with browser accessibility, but after doing some brief research on accessibility i managed to solve all of my issues. This project pushed me to learn more about browser accessibility.",
+        "about":"Loopstudio Landing Page is a front-end Junior level project. I tried to make it as responsive as possible. This project pushed me to learn more about browser accessibility.",
         "technologies":["HTML","SASS","JS"]
     },
     {
         "id":6,
-        "image":"../assets/projectImg/todo.jpg",
+        "image":"../assets/projectImg/todo.webp",
         "nameProject":"To-do List",
         "githubLink":"https://github.com/Alucard2169/JS-TO-DO-list.git",
         "live":"https://alucard2169.github.io/JS-TO-DO-list/",
-        "about":"JS-TO-Do List is a front-end mentor challenge that i completed using Object Oriented Paradigm in Javascript.This application let's the user to store their list of tasks virtually in the localstorage of browser. Using this application, the user can view, add and delete their tasks. It provides 2 themes for user convenance.",
+        "about":"JS-TO-Do List is a front-end mentor challenge that i completed using Object Oriented Paradigm.This application let's the user store their list of tasks virtually in the localstorage of browser. Using this application, the user can view, add and delete their tasks. It provides 2 themes for user convenance.",
         "technologies":["HTML","CSS","SASS","Javascript","LocalStorage"]
     },
     {
         "id":7,
-        "image":"../assets/projectImg/rockpaper.jpg",
+        "image":"../assets/projectImg/rockpaper.webp",
         "nameProject":"Rock-Paper-Scissor",
         "githubLink":"https://github.com/Alucard2169/Rock-paper-scissor-game.git",
         "live":"https://alucard2169.github.io/Rock-paper-scissor-game/",
