@@ -6,6 +6,7 @@
             "link": "https://www.thesparksfoundationsingapore.org/",
             "time": "September 2022 - October 2022",
             "about": "During my internship period in The Sparks Foundation, I communicated a lot with my fellow interns and worked with them. During my Internship I build a MERN application. A basic banking system, It represents a simple bank application, where the user can view their bank details and transfer money to others. I learned new techniques while building the project and learned new ways to solve errors."
+            
         },
         {
             "id": 2,
@@ -13,6 +14,7 @@
             "link": "https://www.marutisuzuki.com/",
             "time": "August 2022 - September 2022",
             "about": "During my internship period in Maruti Suzuki, I learned to work with a team of developers and to communicate with other team members. I worked on both the front-end and back-end of a data handling application. The application handles the data sent by venders and store that data into company's database for further analysis. I worked  on the front-end to make it look pleasant and easy to use. I worked on the backend to make the data handling more smooth, so that future operations that are to be performed on the data can be performed smoothly and easily."
+      
         }
     ],
     [
