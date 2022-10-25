@@ -213,7 +213,7 @@ window.addEventListener('mousemove', moveCursor)
 
 const destopNav = document.getElementById('desktopNav')
 window.addEventListener('scroll', (e) => {
-    console.log(scrollY)
+
     if (scrollY > 570) {
         destopNav.classList.add('light')
     }
