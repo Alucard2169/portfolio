@@ -16,6 +16,8 @@
         }
     ],
     [
+        
+        // preview projects
         {
             "id": 1,
             "image": "../assets/projectImg/animeCard.webp",
@@ -65,6 +67,8 @@
         }
     ],
     [
+        
+        // all projects
         {
             "id": 1,
             "image": "../assets/projectImg/animeCard.webp",
@@ -167,6 +171,15 @@
                 "CSS",
                 "Javascript"
             ]
+        },
+        {
+            "id":8,
+            "image":"assets/projectImg/space_tourism.webp",
+            "nameProject":"Space Tourism",
+            "githubLink":"https://github.com/Alucard2169/space-tourism.git",
+            "live": "https://lucent-monstera-d84b1b.netlify.app/",
+            "about":"Space Tourism is a frontend mentor intermediate challenge that i build using React, this project introduced me to fetching data from local .json file, i got to work with new hooks present in react",
+            "technologies":["ReactJS","Axios","json"]
         }
     ]
 ]
