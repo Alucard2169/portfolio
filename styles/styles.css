@@ -17,6 +17,18 @@ html {
   height: 100%;
 }
 
+.light {
+  background-color: white;
+}
+
+.light ul li a {
+  color: #0D0D0D;
+}
+
+.light ul li a::after {
+  background-color: #0D0D0D !important;
+}
+
 .cursor {
   display: none;
   position: absolute;
@@ -105,6 +117,8 @@ body .container .homepage .topBar {
 
 body .container .homepage .topBar .desktopNav {
   display: none;
+  -webkit-transition: all 500ms steps(4, jump-end);
+  transition: all 500ms steps(4, jump-end);
 }
 
 body .container .homepage .topBar .mobileNav {
@@ -156,18 +170,18 @@ body .container .homepage .nameContainer .occupCont::after {
           transform-origin: left;
   text-align: center;
   z-index: 10;
-  -webkit-transition: -webkit-transform 1s ease-in-out;
-  transition: -webkit-transform 1s ease-in-out;
-  transition: transform 1s ease-in-out;
-  transition: transform 1s ease-in-out, -webkit-transform 1s ease-in-out;
+  -webkit-transition: -webkit-transform 1s cubic-bezier(0.29, 1.01, 1, -0.68);
+  transition: -webkit-transform 1s cubic-bezier(0.29, 1.01, 1, -0.68);
+  transition: transform 1s cubic-bezier(0.29, 1.01, 1, -0.68);
+  transition: transform 1s cubic-bezier(0.29, 1.01, 1, -0.68), -webkit-transform 1s cubic-bezier(0.29, 1.01, 1, -0.68);
 }
 
 body .container .homepage .nameContainer .occupCont .occ {
   font-size: 1.5rem;
   z-index: 20;
   position: relative;
-  -webkit-transition: all 1s ease-in-out;
-  transition: all 1s ease-in-out;
+  -webkit-transition: all 1s cubic-bezier(0.29, 1.01, 1, -0.68);
+  transition: all 1s cubic-bezier(0.29, 1.01, 1, -0.68);
   font-weight: 200;
 }
 
@@ -265,6 +279,7 @@ body .container .experience {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  position: relative;
 }
 
 body .container .experience .experienceHead {
@@ -319,6 +334,7 @@ body .container .experience .exper .About {
 }
 
 body .container .projects {
+  margin-top: 7rem;
   padding: 1.5rem;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -577,10 +593,7 @@ body .container .contact .media a img {
   }
   body .container .about .aboutCont .aboutPara {
     font-size: 1.8rem;
-  }
-  body .container .about .aboutCont .flower {
-    display: block;
-    margin: auto;
+    line-height: 2.5rem;
   }
   body .container .about .divider {
     display: block;
