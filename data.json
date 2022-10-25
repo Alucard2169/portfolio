@@ -16,8 +16,7 @@
         }
     ],
     [
-        
-        // preview projects
+
         {
             "id": 1,
             "image": "../assets/projectImg/animeCard.webp",
@@ -67,8 +66,7 @@
         }
     ],
     [
-        
-        // all projects
+   
         {
             "id": 1,
             "image": "../assets/projectImg/animeCard.webp",
