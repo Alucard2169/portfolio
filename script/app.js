@@ -29,6 +29,8 @@ mobileMenuItems.forEach((item) => {
 
 
 
+
+
 const addExperience = (id,head,link,time,para) => {
     const experColumn = document.createElement('div');
     const experHead = document.createElement('h4');
@@ -37,6 +39,9 @@ const addExperience = (id,head,link,time,para) => {
     const experTime = document.createElement('span');
     const experPara = document.createElement('p');
     const linkIcon = document.createElement('img');
+ 
+
+
 
     experColumn.setAttribute('id',id)
     experLink.textContent = head;
@@ -46,7 +51,6 @@ const addExperience = (id,head,link,time,para) => {
     experPara.textContent = para;
     linkIcon.classList.add('link');
     linkIcon.src = './assets/icons/link_icon.svg';
-    linkIcon.alt = "company website link";
 
     experHead.appendChild(linkIcon)
 
@@ -55,6 +59,7 @@ const addExperience = (id,head,link,time,para) => {
     experHead.classList.add('Head');
     experTime.classList.add('Time');
     experPara.classList.add('About');
+
 
     experLink.appendChild(experLinkIcon)
     experHead.appendChild(experLink);
@@ -124,10 +129,6 @@ const addProject = (id,image,nameProject,githubLink,live,about,technologies) => 
     })
 
 
-
-
-
-
     imageContainer.appendChild(projectImage);
     projectCard.appendChild(imageContainer);
     projectCard.appendChild(info)
@@ -148,7 +149,7 @@ const getData = async () => {
 
 
     experience.forEach((exp) => {
-       const { id, companyName, link, time, about } = exp;
+       const { id, companyName, link, time, about} = exp;
 
         addExperience(id,companyName,link,time,about)
     })
@@ -156,6 +157,8 @@ const getData = async () => {
 }
 
 getData()
+
+
 
 let preview = true;
 
@@ -203,4 +206,20 @@ const moveCursor = (e) => {
     cursorRounded.style.transform = `translate3d(${mouseX - 7}px,${mouseY -12}px,0)`;
 }
 
-window.addEventListener('mousemove',moveCursor)
+window.addEventListener('mousemove', moveCursor)
+
+
+// navbar color change
+
+const destopNav = document.getElementById('desktopNav')
+window.addEventListener('scroll', (e) => {
+    console.log(scrollY)
+    if (scrollY > 570) {
+        destopNav.classList.add('light')
+    }
+    else {
+        destopNav.classList.remove('light')
+    }
+})
+
+
