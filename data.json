@@ -18,56 +18,6 @@
         }
     ],
     [
-
-        {
-            "id": 1,
-            "image": "../assets/projectImg/animeCard.webp",
-            "nameProject": "Anime Cards",
-            "githubLink": "https://github.com/Alucard2169/Anime_cards.git",
-            "live": "https://breakable-gabardine-ant.cyclic.app/",
-            "about": "Anime Card is a web application that fetches data from Jikan API and displays it on the frontend. I used nodeJS and expressJS as proxy server with ReactJS as Frontend. The application is deployed on Cyclic.",
-            "technologies": [
-                "ReactJS",
-                "NodeJS",
-                "ExpressJS",
-                "RestAPI",
-                "FramerMotion"
-            ]
-        },
-        {
-            "id": 2,
-            "image": "../assets/projectImg/library.webp",
-            "nameProject": "Library",
-            "githubLink": "https://github.com/Alucard2169/library.git",
-            "live": "https://alucard2169.github.io/library/",
-            "about": "Library is a simple library application.Library works on object oriented paradigm. It stores user's books into the local storage of the browser so when the user opens up the application again user can see all their books that they have added in the past.",
-            "technologies": [
-                "HTML",
-                "CSS",
-                "SCSS",
-                "Javascript",
-                "LocalStorage"
-            ]
-        },
-        {
-            "id": 3,
-            "image": "../assets/projectImg/IdeasWeb.webp",
-            "nameProject": "Ideas Web",
-            "githubLink": "https://github.com/Alucard2169/Ideas-web.git",
-            "live": "https://defiant-waistcoat-moth.cyclic.app/",
-            "about": "Idea Web i a Idea sharing application. Using this application, anyone on internet access to the application can add their ideas using the frontend interface the application provides, and other users can view the ideas on the home screen.",
-            "technologies": [
-                "HTML",
-                "CSS",
-                "Javascript",
-                "EJS",
-                "NodeJS",
-                "ExpressJS",
-                "MongoDB"
-            ]
-        }
-    ],
-    [
    
         {
             "id": 1,
