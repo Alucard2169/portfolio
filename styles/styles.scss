@@ -61,44 +61,41 @@ html {
     top: 0;
     left: 0;
     padding: 1.5rem;
-    opacity: 0;
     z-index: 200;
-    transform: scaleX(0);
+    opacity: 0;
     transform-origin: right;
+    transform: scaleX(0);
     transition: all 400ms ease-in-out;
 
-}
 
-.mobileMenuVisible {
+    .menuCloseBtn {
+        position: absolute;
+        border: none;
+        background-color: $menu-bg;
+        right: 1.5rem;
+    }
 
-    opacity: 1;
-    transform: scaleX(1);
+    ul {
+        display: flex;
+        flex-direction: column;
+        border: 1px $border-color solid;
+        align-items: center;
+        gap: 3rem;
+        padding: 14.4rem 0;
+        height: 100%;
 
-}
-
-.menuCloseBtn {
-    position: absolute;
-    border: none;
-    background-color: $menu-bg;
-    right: 1.5rem;
-}
-
-ul {
-    display: flex;
-    flex-direction: column;
-    border: 1px $border-color solid;
-    align-items: center;
-    gap: 3rem;
-    padding: 14.4rem 0;
-    height: 100%;
-
-    li {
-        a {
-            font-size: 2rem;
+        li {
+            a {
+                font-size: 2rem;
+            }
         }
     }
 }
 
+.mobileMenuVisible {
+    opacity: 1;
+    transform: scaleX(1);
+}
 
 body {
     background-color: $main-bodyColor;
@@ -472,6 +469,8 @@ body {
 
 @media only screen and (min-width: 1200px) {
     body {
+        overflow: visible;
+
         .cursor {
             display: block;
         }
