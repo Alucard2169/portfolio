@@ -48,30 +48,24 @@ html {
   top: 0;
   left: 0;
   padding: 1.5rem;
-  opacity: 0;
   z-index: 200;
-  -webkit-transform: scaleX(0);
-          transform: scaleX(0);
+  opacity: 0;
   -webkit-transform-origin: right;
           transform-origin: right;
+  -webkit-transform: scaleX(0);
+          transform: scaleX(0);
   -webkit-transition: all 400ms ease-in-out;
   transition: all 400ms ease-in-out;
 }
 
-.mobileMenuVisible {
-  opacity: 1;
-  -webkit-transform: scaleX(1);
-          transform: scaleX(1);
-}
-
-.menuCloseBtn {
+.mobileMenu .menuCloseBtn {
   position: absolute;
   border: none;
   background-color: #1E1E1E;
   right: 1.5rem;
 }
 
-ul {
+.mobileMenu ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -88,8 +82,14 @@ ul {
   height: 100%;
 }
 
-ul li a {
+.mobileMenu ul li a {
   font-size: 2rem;
+}
+
+.mobileMenuVisible {
+  opacity: 1;
+  -webkit-transform: scaleX(1);
+          transform: scaleX(1);
 }
 
 body {
@@ -524,6 +524,9 @@ body .container .contact .media a img {
 }
 
 @media only screen and (min-width: 1200px) {
+  body {
+    overflow: visible;
+  }
   body .cursor {
     display: block;
   }
