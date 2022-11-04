@@ -17,16 +17,8 @@ html {
   height: 100%;
 }
 
-.light {
-  background-color: #ffffff;
-}
-
-.light ul li a {
-  color: #0D0D0D;
-}
-
-.light ul li a::after {
-  background-color: #0D0D0D !important;
+.desktopBack {
+  display: none;
 }
 
 .cursor {
@@ -169,38 +161,41 @@ body .container .homepage .nameContainer .occupCont {
   position: relative;
 }
 
-body .container .homepage .nameContainer .occupCont::after {
-  content: '';
-  position: absolute;
+body .container .homepage .nameContainer .occupCont::before {
+  content: "";
+  background-color: #ffffff;
   width: 100%;
   height: 100%;
-  background-color: #ffffff;
-  inset: 0;
-  left: -10px;
-  -webkit-transform: scaleX(0.005);
-          transform: scaleX(0.005);
-  -webkit-transform-origin: left;
-          transform-origin: left;
-  text-align: center;
-  z-index: 10;
-  -webkit-transition: -webkit-transform 1s cubic-bezier(0.29, 1.01, 1, -0.68);
-  transition: -webkit-transform 1s cubic-bezier(0.29, 1.01, 1, -0.68);
-  transition: transform 1s cubic-bezier(0.29, 1.01, 1, -0.68);
-  transition: transform 1s cubic-bezier(0.29, 1.01, 1, -0.68), -webkit-transform 1s cubic-bezier(0.29, 1.01, 1, -0.68);
+  position: absolute;
+  top: 0;
+  left: 0;
+  -webkit-transform: scale(0, 1);
+          transform: scale(0, 1);
+  -webkit-transform-origin: right top;
+          transform-origin: right top;
+  -webkit-transition: -webkit-transform 1s cubic-bezier(0.25, 1, 0.5, 1);
+  transition: -webkit-transform 1s cubic-bezier(0.25, 1, 0.5, 1);
+  transition: transform 1s cubic-bezier(0.25, 1, 0.5, 1);
+  transition: transform 1s cubic-bezier(0.25, 1, 0.5, 1), -webkit-transform 1s cubic-bezier(0.25, 1, 0.5, 1);
+  z-index: 0;
 }
 
 body .container .homepage .nameContainer .occupCont .occ {
   font-size: 1.5rem;
   z-index: 20;
   position: relative;
-  -webkit-transition: all 1s cubic-bezier(0.29, 1.01, 1, -0.68);
-  transition: all 1s cubic-bezier(0.29, 1.01, 1, -0.68);
+  -webkit-transition: -webkit-transform 1s cubic-bezier(0.25, 1, 0.5, 1);
+  transition: -webkit-transform 1s cubic-bezier(0.25, 1, 0.5, 1);
+  transition: transform 1s cubic-bezier(0.25, 1, 0.5, 1);
+  transition: transform 1s cubic-bezier(0.25, 1, 0.5, 1), -webkit-transform 1s cubic-bezier(0.25, 1, 0.5, 1);
   font-weight: 200;
 }
 
-body .container .homepage .nameContainer .occupCont:hover::after {
-  -webkit-transform: scaleX(1.1);
-          transform: scaleX(1.1);
+body .container .homepage .nameContainer .occupCont:hover::before {
+  -webkit-transform-origin: left top;
+          transform-origin: left top;
+  -webkit-transform: scaleX(1);
+          transform: scaleX(1);
 }
 
 body .container .homepage .nameContainer .occupCont:hover .occ {
@@ -526,9 +521,26 @@ body .container .contact .media a img {
 @media only screen and (min-width: 1200px) {
   body {
     overflow: visible;
+    background: url("../assets/design_media/back.webp") no-repeat top fixed;
+    background-size: cover;
   }
   body .cursor {
     display: block;
+  }
+  body .container {
+    gap: 0;
+  }
+  body .container .homepage {
+    background-color: #0D0D0D;
+  }
+  body .container .homepage .desktopBack {
+    display: block;
+    position: absolute;
+    height: 3.45rem;
+    width: 100%;
+    background-color: white;
+    top: 0;
+    left: 0;
   }
   body .container .homepage .topBar {
     position: relative;
@@ -541,7 +553,9 @@ body .container .contact .media a img {
     top: 0;
     left: 0;
     width: 100vw;
+    background-color: rgba(255, 255, 255, 0.8);
     padding: 1rem 3rem;
+    z-index: 10;
   }
   body .container .homepage .topBar .desktopNav ul {
     -ms-flex-item-align: start;
@@ -555,6 +569,7 @@ body .container .contact .media a img {
   body .container .homepage .topBar .desktopNav ul li a {
     font-size: 1.2rem;
     position: relative;
+    color: #0D0D0D;
   }
   body .container .homepage .topBar .desktopNav ul li a::after {
     content: '';
@@ -563,7 +578,7 @@ body .container .contact .media a img {
     left: 0;
     width: 100%;
     height: 1px;
-    background-color: #ffffff;
+    background-color: #0D0D0D;
     -webkit-transform: scaleX(0);
             transform: scaleX(0);
     -webkit-transition: -webkit-transform 400ms ease-in-out;
@@ -604,8 +619,9 @@ body .container .contact .media a img {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
-    padding: 2rem 5rem;
+    padding: 5rem 5rem;
     gap: 3rem;
+    background-color: rgba(13, 13, 13, 0.5);
   }
   body .container .about .aboutCont {
     width: 50%;
@@ -622,6 +638,11 @@ body .container .contact .media a img {
   }
   body .container .about .skillsCont .skills .skill {
     font-size: 1.4rem;
+  }
+  body .container .experience {
+    background-color: #0D0D0D;
+    padding-top: 5rem;
+    margin: 0;
   }
   body .container .experience #experience {
     display: -webkit-box;
@@ -640,6 +661,11 @@ body .container .contact .media a img {
   body .container .experience #experience .exper .About {
     line-height: 2.5rem;
     font-size: 1.2rem;
+  }
+  body .container .projects {
+    background-color: #0D0D0D;
+    margin: 0;
+    padding-top: 5rem;
   }
   body .container .projects .allProjects {
     gap: 3rem;
