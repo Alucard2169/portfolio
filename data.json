@@ -131,5 +131,18 @@
             "about":"Space Tourism is a frontend mentor intermediate challenge that i build using React, this project introduced me to fetching data from local .json file, i got to work with new hooks present in react",
             "technologies":["ReactJS","Axios","json"]
         }
+    ],[
+        "HTML",
+        "Javascript",
+        "Bootstrap",
+        "NodeJS",
+        "ExpressJS",
+        "ReactJS",
+        "Figma",
+        "CSS",
+        "SASS",
+        "MongoDB",
+        "Webpack",
+        "Git"
     ]
 ]
