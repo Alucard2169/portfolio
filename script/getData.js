@@ -1,5 +1,6 @@
 import addExperience from "./experienceComponent.js";
 import addProject from "./projectComponent.js";
+import skillsComponent from "./skillsComponent.js";
 
 
 const getData = async () => {
@@ -8,21 +9,14 @@ const getData = async () => {
 
 
     const experience = fullData[0];
-    const allProjects = fullData[1];
+    const projects = fullData[1];
+    const skills = fullData[2]
 
+    addExperience(experience)
 
-    experience.forEach((exp) => {
-       const { id, companyName, link, time, about} = exp;
+    addProject(projects)
 
-        addExperience(id,companyName,link,time,about)
-    })
-
-     allProjects.forEach((pro) => {
-        const { id, image, nameProject, githubLink, live, about, technologies } = pro;
-
-        addProject(id,image,nameProject,githubLink,live,about,technologies)
-    })
-
+    skillsComponent(skills)
 
 }
 
