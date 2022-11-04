@@ -23,22 +23,12 @@ html {
     height: 100%;
 }
 
-.light {
-    background-color: $main-textColor;
 
-    ul {
-        li {
-            a {
-                color: $main-bodyColor;
 
-                &::after {
-                    background-color: $main-bodyColor !important;
-                }
-            }
-        }
-    }
+
+.desktopBack {
+    display: none;
 }
-
 
 .cursor {
     display: none;
@@ -156,19 +146,18 @@ body {
                     width: fit-content;
                     position: relative;
 
-                    &::after {
-                        content: '';
-                        position: absolute;
+                    &::before {
+                        content: "";
+                        background-color: #ffffff;
                         width: 100%;
                         height: 100%;
-                        background-color: $main-textColor;
-                        inset: 0;
-                        left: -10px;
-                        transform: scaleX(.005);
-                        transform-origin: left;
-                        text-align: center;
-                        z-index: 10;
-                        transition: transform 1s cubic-bezier(.29, 1.01, 1, -0.68);
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        transform: scale(0, 1);
+                        transform-origin: right top;
+                        transition: transform 1s cubic-bezier(.25, 1, .5, 1);
+                        z-index: 0;
 
                     }
 
@@ -176,13 +165,14 @@ body {
                         font-size: 1.5rem;
                         z-index: 20;
                         position: relative;
-                        transition: all 1s cubic-bezier(.29, 1.01, 1, -0.68);
+                        transition: transform 1s cubic-bezier(.25, 1, .5, 1);
                         font-weight: 200;
                     }
 
                     &:hover {
-                        &::after {
-                            transform: scaleX(1.1);
+                        &::before {
+                            transform-origin: left top;
+                            transform: scaleX(1);
                         }
 
                         .occ {
@@ -470,13 +460,30 @@ body {
 @media only screen and (min-width: 1200px) {
     body {
         overflow: visible;
+        background: url("../assets/design_media/back.jpg") no-repeat top fixed;
+        background-size: cover;
 
         .cursor {
             display: block;
         }
 
         .container {
+            gap: 0;
+
             .homepage {
+                background-color: $main-bodyColor;
+
+                .desktopBack {
+                    display: block;
+                    position: absolute;
+                    height: 3.45rem;
+                    width: 100%;
+                    background-color: white;
+                    top: 0;
+                    left: 0;
+
+                }
+
                 .topBar {
                     position: relative;
 
@@ -486,7 +493,10 @@ body {
                         top: 0;
                         left: 0;
                         width: 100vw;
+                        background-color: rgba($color: #ffffff, $alpha: .8);
                         padding: 1rem 3rem;
+                        z-index: 10;
+
 
                         ul {
                             align-self: flex-start;
@@ -498,6 +508,7 @@ body {
                                 a {
                                     font-size: 1.2rem;
                                     position: relative;
+                                    color: $main-bodyColor;
 
                                     &::after {
                                         content: '';
@@ -506,9 +517,10 @@ body {
                                         left: 0;
                                         width: 100%;
                                         height: 1px;
-                                        background-color: $main-textColor;
+                                        background-color: $main-bodyColor;
                                         transform: scaleX(0);
                                         transition: transform 400ms ease-in-out;
+
                                     }
 
                                     &:hover::after {
@@ -544,11 +556,12 @@ body {
             }
 
             .about {
-                flex-direction: row;
 
+                flex-direction: row;
                 justify-content: space-between;
-                padding: 2rem 5rem;
+                padding: 5rem 5rem;
                 gap: 3rem;
+                background-color: rgba($color: $main-bodyColor, $alpha: .5);
 
                 .aboutCont {
                     width: 50%;
@@ -578,6 +591,11 @@ body {
             }
 
             .experience {
+                background-color: $main-bodyColor;
+                padding-top: 5rem;
+
+                margin: 0;
+
                 #experience {
                     display: flex;
                     margin: auto;
@@ -602,6 +620,11 @@ body {
             }
 
             .projects {
+                background-color: $main-bodyColor;
+                margin: 0;
+                padding-top: 5rem;
+
+
                 .allProjects {
                     gap: 3rem;
 
