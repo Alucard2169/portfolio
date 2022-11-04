@@ -49,19 +49,6 @@ const moveCursor = (e) => {
 window.addEventListener('mousemove', moveCursor)
 
 
-// navbar color change
-const destopNav = document.getElementById('desktopNav')
-window.addEventListener('scroll', (e) => {
-    console.log(scrollY)
-    if (scrollY > 570) {
-        destopNav.classList.add('light')
-    }
-    else {
-        destopNav.classList.remove('light')
-    }
-})
-
-
 
 
 
