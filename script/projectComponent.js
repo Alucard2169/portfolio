@@ -1,6 +1,11 @@
 const projectSection = document.getElementById('project');
 
-const addProject = (id, image, nameProject, githubLink, live, about, technologies) => {
+const addProject = (projects) => {
+   
+    projects.forEach((project) => {
+
+        const { id, image, nameProject, githubLink, live, about, technologies } = project;
+
     const projectCard = document.createElement('div');
     const imageContainer = document.createElement('div');
     const projectImage = document.createElement('img');
@@ -64,6 +69,7 @@ const addProject = (id, image, nameProject, githubLink, live, about, technologie
     projectLinkCont.appendChild(liveLink)
     projectCard.appendChild(lower)
     projectSection.appendChild(projectCard)
+    })
 
 }
 
