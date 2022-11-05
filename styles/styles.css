@@ -384,6 +384,7 @@ body .container .projects .allProjects .project .imageContainer {
   width: 100%;
   min-height: 11rem;
   overflow: hidden;
+  position: relative;
 }
 
 body .container .projects .allProjects .project .imageContainer .projectImage {
@@ -391,15 +392,40 @@ body .container .projects .allProjects .project .imageContainer .projectImage {
   max-height: 100%;
   min-height: 11rem;
   min-width: 22rem;
-  -webkit-transition: -webkit-transform 300ms ease-in-out;
-  transition: -webkit-transform 300ms ease-in-out;
-  transition: transform 300ms ease-in-out;
-  transition: transform 300ms ease-in-out, -webkit-transform 300ms ease-in-out;
+  pointer-events: none;
 }
 
-body .container .projects .allProjects .project .imageContainer .projectImage:hover {
-  -webkit-transform: scale(1.1);
-          transform: scale(1.1);
+body .container .projects .allProjects .project .imageContainer::after, body .container .projects .allProjects .project .imageContainer::before {
+  content: '';
+  height: 50%;
+  width: 100%;
+  background-color: rgba(13, 13, 13, 0.7);
+  position: absolute;
+  -webkit-transform: scaleX(0);
+          transform: scaleX(0);
+  -webkit-transition: -webkit-transform 300ms ease-out;
+  transition: -webkit-transform 300ms ease-out;
+  transition: transform 300ms ease-out;
+  transition: transform 300ms ease-out, -webkit-transform 300ms ease-out;
+}
+
+body .container .projects .allProjects .project .imageContainer::after {
+  bottom: 0;
+  left: 0;
+  -webkit-transform-origin: right;
+          transform-origin: right;
+}
+
+body .container .projects .allProjects .project .imageContainer::before {
+  top: 0;
+  right: 0;
+  -webkit-transform-origin: left;
+          transform-origin: left;
+}
+
+body .container .projects .allProjects .project .imageContainer:hover::after, body .container .projects .allProjects .project .imageContainer:hover::before {
+  -webkit-transform: scaleX(1);
+          transform: scaleX(1);
 }
 
 body .container .projects .allProjects .project .projectName {
