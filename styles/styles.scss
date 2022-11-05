@@ -331,19 +331,47 @@ body {
                         width: 100%;
                         min-height: 11rem;
                         overflow: hidden;
+                        position: relative;
+
 
                         .projectImage {
                             max-width: 100%;
                             max-height: 100%;
                             min-height: 11rem;
                             min-width: 22rem;
-                            transition: transform 300ms ease-in-out;
-
-                            &:hover {
-                                transform: scale(1.1);
-                            }
+                            pointer-events: none;
                         }
 
+                        &::after,
+                        &::before {
+                            content: '';
+                            height: 50%;
+                            width: 100%;
+                            background-color: rgba($color: $main-bodyColor, $alpha: .7);
+                            position: absolute;
+                            transform: scaleX(0);
+                            transition: transform 300ms ease-out;
+                        }
+
+                        &::after {
+                            bottom: 0;
+                            left: 0;
+                            transform-origin: right;
+                        }
+
+                        &::before {
+                            top: 0;
+                            right: 0;
+                            transform-origin: left;
+                        }
+
+                        &:hover {
+
+                            &::after,
+                            &::before {
+                                transform: scaleX(1);
+                            }
+                        }
                     }
 
                     .projectName {
