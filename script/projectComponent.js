@@ -42,6 +42,7 @@ const addProject = (projects) => {
     projectCard.setAttribute('id',id)
     projectTechHead.textContent = "Skills Used";
     projectImage.src = image;
+    projectImage.alt = `${nameProject} image`
     projectImage.alt = nameProject;
     projectName.textContent = nameProject;
     projectAbout.textContent = about;
