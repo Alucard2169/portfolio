@@ -34,8 +34,30 @@
                 "FramerMotion"
             ]
         },
-        {
+         {
             "id": 2,
+            "image": "../assets/projectImg/loopstudio.webp",
+            "nameProject": "Loopstudios landing page",
+            "githubLink": "https://github.com/Alucard2169/loopStudio-landing-page.git",
+            "live": "https://alucard2169.github.io/loopStudio-landing-page/",
+            "about": "Loopstudio Landing Page is a front-end Junior level project. I tried to make it as responsive as possible. This project pushed me to learn more about browser accessibility.",
+            "technologies": [
+                "HTML",
+                "SASS",
+                "JS"
+            ]
+        },
+        {
+            "id":3,
+            "image":"assets/projectImg/space_tourism.webp",
+            "nameProject":"Space Tourism",
+            "githubLink":"https://github.com/Alucard2169/space-tourism.git",
+            "live": "https://lucent-monstera-d84b1b.netlify.app/",
+            "about":"Space Tourism is a frontend mentor intermediate challenge that i build using React, this project introduced me to fetching data from local .json file, i got to work with new hooks present in react",
+            "technologies":["ReactJS","Axios","json"]
+        },
+        {
+            "id": 4,
             "image": "../assets/projectImg/library.webp",
             "nameProject": "Library",
             "githubLink": "https://github.com/Alucard2169/library.git",
@@ -49,8 +71,9 @@
                 "LocalStorage"
             ]
         },
+        
         {
-            "id": 3,
+            "id": 5,
             "image": "../assets/projectImg/IdeasWeb.webp",
             "nameProject": "Ideas Web",
             "githubLink": "https://github.com/Alucard2169/Ideas-web.git",
@@ -67,7 +90,7 @@
             ]
         },
         {
-            "id": 4,
+            "id": 6,
             "image": "../assets/projectImg/grip.webp",
             "nameProject": "Basic Banking System",
             "githubLink": "https://github.com/Alucard2169/GRIP_task1_Banking_system.git",
@@ -81,21 +104,9 @@
                 "Framer Motion"
             ]
         },
+
         {
-            "id": 5,
-            "image": "../assets/projectImg/loopstudio.webp",
-            "nameProject": "Loopstudios landing page",
-            "githubLink": "https://github.com/Alucard2169/loopStudio-landing-page.git",
-            "live": "https://alucard2169.github.io/loopStudio-landing-page/",
-            "about": "Loopstudio Landing Page is a front-end Junior level project. I tried to make it as responsive as possible. This project pushed me to learn more about browser accessibility.",
-            "technologies": [
-                "HTML",
-                "SASS",
-                "JS"
-            ]
-        },
-        {
-            "id": 6,
+            "id": 7,
             "image": "../assets/projectImg/todo.webp",
             "nameProject": "To-do List",
             "githubLink": "https://github.com/Alucard2169/JS-TO-DO-list.git",
@@ -110,7 +121,7 @@
             ]
         },
         {
-            "id": 7,
+            "id": 8,
             "image": "../assets/projectImg/rockpaper.webp",
             "nameProject": "Rock-Paper-Scissor",
             "githubLink": "https://github.com/Alucard2169/Rock-paper-scissor-game.git",
@@ -121,16 +132,8 @@
                 "CSS",
                 "Javascript"
             ]
-        },
-        {
-            "id":8,
-            "image":"assets/projectImg/space_tourism.webp",
-            "nameProject":"Space Tourism",
-            "githubLink":"https://github.com/Alucard2169/space-tourism.git",
-            "live": "https://lucent-monstera-d84b1b.netlify.app/",
-            "about":"Space Tourism is a frontend mentor intermediate challenge that i build using React, this project introduced me to fetching data from local .json file, i got to work with new hooks present in react",
-            "technologies":["ReactJS","Axios","json"]
         }
+        
     ],[
         "HTML",
         "Javascript",
