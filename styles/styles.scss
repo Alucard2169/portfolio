@@ -30,18 +30,6 @@ html {
     display: none;
 }
 
-.cursor {
-    display: none;
-    position: absolute;
-    box-shadow: 0px 1px 2px 0px $cursor-color,
-        1px 2px 4px 0px $cursor-color,
-        2px 4px 8px 0px $cursor-color,
-        2px 4px 16px 0px $cursor-color;
-    height: 6px;
-    width: 6px;
-    border-radius: 100px;
-    z-index: 2000;
-}
 
 .mobileMenu {
     position: absolute;
@@ -130,7 +118,7 @@ body {
 
                 .name {
                     line-height: 5rem;
-                    font-weight: 200;
+                    font-weight: 500;
                     font-size: 3rem;
                 }
 
@@ -244,7 +232,7 @@ body {
 
         .experience {
             height: 100vh;
-            padding: 1.5rem;
+            padding: .5rem;
             display: flex;
             flex-direction: column;
             position: relative;
@@ -265,7 +253,7 @@ body {
             .exper {
                 border: .5px $border-color solid;
                 margin-top: 2rem;
-                padding: .5rem;
+                padding: 1rem;
                 border-radius: 10px;
                 display: flex;
                 flex-direction: column;
@@ -290,7 +278,7 @@ body {
                 .About {
                     font-weight: 200;
                     font-size: 1rem;
-                    line-height: 20px;
+                    line-height: 25px;
                 }
 
 
@@ -301,7 +289,7 @@ body {
         }
 
         .projects {
-            margin-top: 7rem;
+            margin-top: 8rem;
             padding: 1.5rem;
             display: flex;
             flex-direction: column;
@@ -374,19 +362,29 @@ body {
                         }
                     }
 
+                    .info {
+                        padding: .5rem;
+                    }
+
                     .projectName {
                         margin-top: 1.5rem;
                         font-size: 2rem;
+                        margin-bottom: 1rem;
                     }
 
                     .aboutProject {
                         font-weight: 200;
-                        line-height: 1.5rem;
+                        word-spacing: 2px;
+                        line-height: 1.8rem;
                         margin-bottom: 1rem;
                     }
 
+                    .lower {
+                        padding: .5rem;
+                    }
 
                     .techHead {
+                        margin-top: 1.5rem;
                         text-underline-offset: 5px;
                         text-decoration: underline;
                     }
@@ -402,14 +400,14 @@ body {
                         .tech {
                             width: 100%;
                             border-radius: 100px;
+                            font-weight: 200;
                         }
                     }
 
                     .projectLinks {
                         margin-top: 1.5rem;
-                        border: 1px $border-color solid;
-                        padding: 1rem;
-                        border-radius: 10px;
+                        border-top: 1px $border-color solid;
+                        padding: 1rem 0;
                         display: flex;
                         gap: 1rem;
 
@@ -459,6 +457,7 @@ body {
             background-color: $menu-bg;
             margin-top: auto;
             padding: 1.5rem;
+            position: relative;
 
             .contactHead {
                 border: 1px $menu-bg solid;
@@ -475,6 +474,44 @@ body {
                     img {
                         width: 1.5rem;
                         height: 1.5rem;
+                    }
+                }
+            }
+
+            .toTop {
+                position: absolute;
+                right: 5%;
+                bottom: 10%;
+                width: 2rem;
+                height: 70%;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                align-items: center;
+
+
+                .line {
+                    width: 1px;
+                    background-color: transparent;
+                    height: 65%;
+                    position: relative;
+
+                    .inner {
+                        position: absolute;
+                        background-color: white;
+                        height: .8rem;
+                        top: 100%;
+                        left: 0;
+                        width: 100%;
+                        animation: flow 2s ease-in infinite;
+                    }
+                }
+
+
+                a {
+                    img {
+                        width: 100%;
+                        height: 2rem;
                     }
                 }
             }
@@ -576,6 +613,7 @@ body {
 
                     .name {
                         text-align: center;
+                        font-weight: 200;
                     }
                 }
 
@@ -621,6 +659,8 @@ body {
             .experience {
                 background-color: $main-bodyColor;
                 padding-top: 5rem;
+                padding-left: 1rem;
+                padding-right: 1rem;
 
                 margin: 0;
 
@@ -631,6 +671,7 @@ body {
 
                     .exper {
                         width: 50%;
+                        height: fit-content;
 
                         .Head {
                             font-size: 1.5rem;
@@ -652,40 +693,22 @@ body {
                 margin: 0;
                 padding-top: 5rem;
 
-
                 .allProjects {
-                    gap: 3rem;
+                    gap: 4rem;
+                    grid-template-columns: repeat(3, 1fr);
 
                     .project {
-                        display: grid;
-                        grid-template-columns: repeat(3, 1fr);
-                        height: 100%;
-                        align-items: center;
-                        gap: 1rem;
+                        height: fit-content;
 
                         .imageContainer {
-                            min-width: 25rem;
-                            height: 15rem;
-
-
-                            .projectImage {
-                                min-height: 15rem;
-                                min-width: 25rem;
-                            }
-
-
+                            width: 100%;
                         }
 
                         .info {
-                            display: flex;
-                            flex-direction: column;
-                            justify-content: space-between;
-                            height: 100%;
-                            width: 100%;
-
+                            padding: .7rem;
 
                             .projectName {
-                                font-size: 2.5rem;
+                                font-size: 3rem;
                             }
 
                             .aboutProject {
@@ -694,29 +717,15 @@ body {
                         }
 
                         .lower {
-                            border-left: 1px $border-color solid;
-                            display: flex;
-                            flex-direction: column;
-                            justify-content: space-between;
-                            height: 100%;
-                            padding: 1rem;
-
-
-                            .techHead {
-                                font-size: 1.2rem;
-                            }
-
-                            .projectLinks {
-                                margin-top: 1rem;
-                                padding: .5rem;
-
-                            }
+                            margin-top: auto;
                         }
                     }
                 }
             }
 
             .contact {
+                position: relative;
+
                 p {
                     font-size: 1.5rem;
                 }
@@ -724,7 +733,105 @@ body {
                 .media {
                     gap: 2rem;
                 }
+
+                .toTop {
+
+                    right: 10%;
+                    bottom: 15%;
+
+                    .line {
+
+
+                        .inner {
+
+                            height: 1rem;
+
+                        }
+                    }
+
+
+                    a {
+                        img {
+                            width: 100%;
+                            height: 2rem;
+                        }
+                    }
+                }
             }
         }
     }
+}
+
+
+@keyframes flow {
+    0% {
+        top: 120%;
+        transform: scaleY(0);
+
+    }
+
+    10% {
+        top: 105%;
+        transform: scaleY(.1);
+
+    }
+
+    20% {
+        top: 95%;
+        transform: scaleY(.2);
+    }
+
+    30% {
+        top: 80%;
+        transform: scaleY(.3);
+    }
+
+    40% {
+        top: 70%;
+        transform: scaleY(.4);
+    }
+
+    45% {
+        top: 65%;
+        transform: scaleY(.45);
+    }
+
+    50% {
+        top: 60%;
+        transform: scaleY(.5)
+    }
+
+    55% {
+        top: 50%;
+        transform: scaleY(.55);
+
+    }
+
+    60% {
+        top: 45%;
+        transform: scaleY(.6);
+
+    }
+
+    70% {
+        top: 35%;
+        transform: scaleY(.7);
+    }
+
+    80% {
+        top: 20%;
+        transform: scaleY(.8);
+    }
+
+    90% {
+        top: 10%;
+        transform: scaleY(.9);
+    }
+
+    100% {
+        top: -10%;
+        transform: scaleY(1);
+    }
+
+
 }
