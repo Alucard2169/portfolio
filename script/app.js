@@ -1,6 +1,4 @@
 import getData from './getData.js'
-
-
 getData()
 
 
@@ -38,15 +36,6 @@ mobileMenuItems.forEach((item) => {
 
 
 
-// cursor
-const cursorRounded = document.getElementById("rounded");
-const moveCursor = (e) => {
-    const mouseY = e.pageY;
-    const mouseX = e.pageX;
-    cursorRounded.style.transform = `translate3d(${mouseX - 7}px,${mouseY -12}px,0)`;
-}
-
-window.addEventListener('mousemove', moveCursor)
 
 
 
@@ -54,3 +43,5 @@ window.addEventListener('mousemove', moveCursor)
 
 
 
+
+  
