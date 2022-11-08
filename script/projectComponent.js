@@ -58,7 +58,7 @@ const addProject = (projects) => {
     technologies.forEach((tech) => {
         const projectTech = document.createElement('span');
         projectTech.classList.add('tech');
-        projectTech.textContent = `<${tech}/>`;
+        projectTech.textContent = tech;
         projectTechCont.appendChild(projectTech)
     })
 
