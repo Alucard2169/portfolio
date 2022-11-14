@@ -625,7 +625,7 @@ body .container .contact .toTop a img {
     left: 0;
     width: 100vw;
     background-color: rgba(255, 255, 255, 0.8);
-    padding: 1rem 3rem;
+    padding: 1rem 6.5rem;
     z-index: 10;
   }
   body .container .homepage .topBar .desktopNav ul {
@@ -714,8 +714,8 @@ body .container .contact .toTop a img {
   body .container .experience {
     background-color: #0D0D0D;
     padding-top: 5rem;
-    padding-left: 1rem;
-    padding-right: 1rem;
+    padding-left: 5rem;
+    padding-right: 5rem;
     margin: 0;
   }
   body .container .experience #experience {
@@ -727,9 +727,7 @@ body .container .contact .toTop a img {
   }
   body .container .experience #experience .exper {
     width: 50%;
-    height: -webkit-fit-content;
-    height: -moz-fit-content;
-    height: fit-content;
+    height: auto;
   }
   body .container .experience #experience .exper .Head {
     font-size: 1.5rem;
@@ -742,10 +740,10 @@ body .container .contact .toTop a img {
   body .container .projects {
     background-color: #0D0D0D;
     margin: 0;
-    padding-top: 5rem;
+    padding: 5rem;
   }
   body .container .projects .allProjects {
-    gap: 4rem;
+    gap: 3rem;
     -ms-grid-columns: (1fr)[3];
         grid-template-columns: repeat(3, 1fr);
   }
@@ -761,7 +759,8 @@ body .container .contact .toTop a img {
     padding: .7rem;
   }
   body .container .projects .allProjects .project .info .projectName {
-    font-size: 3rem;
+    font-size: 2.5rem;
+    line-height: 3rem;
   }
   body .container .projects .allProjects .project .info .aboutProject {
     font-size: 1.2rem;
@@ -926,4 +925,11 @@ body .container .contact .toTop a img {
             transform: scaleY(1);
   }
 }
+
+@-webkit-keyframes dr {
+  0% {
+  }
+}
+
+
 /*# sourceMappingURL=styles.css.map */
